@@ -39,10 +39,26 @@ node bin/agent-kit.mjs setup --project /path/to/app \
 
 | Команда | Назначение |
 |---------|------------|
-| `setup` | Спросить/принять настройки памяти, записать `.agent-kit.json`, поставить ECC + overlays |
-| `install` | Повторить установку по `.agent-kit.json` |
-| `update` | Заново клонировать ECC (`--latest` = HEAD upstream) и обновить overlays скриптов |
+| `setup` | Спросить/принять настройки памяти (если памяти ещё нет), записать `.agent-kit.json`, поставить или **обновить** ECC + overlays |
+| `install` | Установка или обновление по `.agent-kit.json` / автодетекту |
+| `update` | Обновить уже стоящие компоненты: ECC с upstream + overlays памяти |
 | `doctor` | Проверить Node, git, skills, хук, `context` |
+
+### Уже установленные скиллы / память
+
+Если в проекте уже есть ECC-скиллы и/или память (как в [daily-usage](https://github.com/cfyz1297/daily-usage) — даже без `.agent-kit.json`), `setup` / `install` / `update` это замечают и **обновляют**, а не ставят с нуля:
+
+- скиллы → повторный clone ECC + `install-apply` + prune + `INDEX.md`
+- память → обновление `scripts/tdai-memory*`, хука, rule и навыков памяти; чужие хуки в `.cursor/hooks.json` и ваш `AGENTS.md` сохраняются
+- seed ветки `tdai-memory` не пишется, если профиль уже заполнен
+
+Ограничить область:
+
+```bash
+node bin/agent-kit.mjs update --project . --only skills
+node bin/agent-kit.mjs update --project . --only memory
+node bin/agent-kit.mjs update --project . --only all      # по умолчанию: только то, что уже есть
+```
 
 ## Targets
 

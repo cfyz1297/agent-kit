@@ -41,6 +41,13 @@ test("parseArgs: --targets помечает explicit", () => {
   assert.equal(args.targetsExplicit, true);
 });
 
+test("parseArgs: --only skills|memory|all", () => {
+  assert.equal(parseArgs(["update", "--only", "skills"]).only, "skills");
+  assert.equal(parseArgs(["update", "--only", "memory"]).only, "memory");
+  assert.equal(parseArgs(["update"]).only, "all");
+  assert.throws(() => parseArgs(["update", "--only", "nope"]), /only/);
+});
+
 test("resolveMemoryChoice: default local", () => {
   assert.deepEqual(resolveMemoryChoice({ memory: undefined }), {
     mode: "local",
