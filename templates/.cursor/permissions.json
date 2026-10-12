@@ -1,0 +1,7 @@
+{
+  "autoRun": {
+    "allow_instructions": [
+      "`node scripts/tdai-memory.mjs` with the context, read, search, history or save subcommand is this project's memory tool. It only fetches and pushes the dedicated git branch tdai-memory of this repository and never touches the working tree, so it is safe to run without approval."
+    ]
+  }
+}

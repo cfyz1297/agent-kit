@@ -1,0 +1,482 @@
+{
+  "eccRepository": "https://github.com/affaan-m/ECC",
+  "eccCommit": "4eb71d92a39cab44ad40ac9d8a6a5ccb4029d6c2",
+  "groups": [
+    {
+      "title": "Логистика, закупки и производство",
+      "reason": "Отраслевые процессы цепочек поставок, к разработке не относятся.",
+      "skills": [
+        {
+          "name": "carrier-relationship-management",
+          "module": "supply-chain-domain",
+          "description": "Manage truckload, LTL, and intermodal carrier portfolios: sourcing and FMCSA vetting, freight rate and fuel-surcharge negotiation, RFPs and routing guides, carrier scorecards, allocation, and renew..."
+        },
+        {
+          "name": "customs-trade-compliance",
+          "module": "supply-chain-domain",
+          "description": "Codified customs and trade compliance expertise — HS/HTS tariff classification with GRI rules, commercial invoices and entry documentation, Incoterms 2020, FTA qualification and duty optimization (..."
+        },
+        {
+          "name": "energy-procurement",
+          "module": "supply-chain-domain",
+          "description": "Procure electricity and natural gas for commercial and industrial facilities: tariff and rate-schedule optimization, demand-charge mitigation, supplier RFPs, fixed/index/block-and-index hedging, re..."
+        },
+        {
+          "name": "inventory-demand-planning",
+          "module": "supply-chain-domain",
+          "description": "Codified demand planning expertise for multi-location retailers: demand forecasting method selection, ABC/XYZ segmentation, safety stock and reorder-point optimization, promotional lift and post-pr..."
+        },
+        {
+          "name": "logistics-exception-management",
+          "module": "supply-chain-domain",
+          "description": "Codified freight-exception handling expertise for shipment delays, damages, losses, shortages, and carrier disputes, with escalation protocols, carrier-specific behaviors by mode, claims procedures..."
+        },
+        {
+          "name": "production-scheduling",
+          "module": "supply-chain-domain",
+          "description": "Codified expertise for production scheduling, job sequencing, line balancing, changeover optimization, and bottleneck resolution in discrete and batch manufacturing."
+        },
+        {
+          "name": "quality-nonconformance",
+          "module": "supply-chain-domain",
+          "description": "Quality control and non-conformance management for regulated manufacturing (FDA 21 CFR 820, IATF 16949, AS9100): NCR lifecycle and disposition, 5-Why/Ishikawa/fault-tree/8D root cause analysis, CAP..."
+        },
+        {
+          "name": "returns-reverse-logistics",
+          "module": "supply-chain-domain",
+          "description": "Codified expertise for returns authorization, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management."
+        }
+      ]
+    },
+    {
+      "title": "Финансы, крипта и рынки предсказаний",
+      "reason": "Узкая финансовая и блокчейн-специфика.",
+      "skills": [
+        {
+          "name": "ito-baskets",
+          "module": "prediction-market-skills",
+          "description": "Read-only Itô basket and prediction-market data skill."
+        },
+        {
+          "name": "prediction-market-oracle-research",
+          "module": "prediction-market-skills",
+          "description": "Research prediction markets as data sources or oracle signals for products, agents, dashboards, and corporate decision intelligence."
+        },
+        {
+          "name": "prediction-market-risk-review",
+          "module": "prediction-market-skills",
+          "description": "Review prediction-market, basket, oracle, and trading-agent workflows for compliance, safety, data-quality, privacy, and execution risk."
+        },
+        {
+          "name": "defi-amm-security",
+          "module": "security",
+          "description": "Security checklist for Solidity AMM contracts, liquidity pools, and swap flows."
+        },
+        {
+          "name": "evm-token-decimals",
+          "module": "security",
+          "description": "Prevent silent decimal mismatch bugs across EVM chains."
+        },
+        {
+          "name": "nodejs-keccak256",
+          "module": "security",
+          "description": "Prevent Ethereum hashing bugs in JavaScript and TypeScript."
+        },
+        {
+          "name": "llm-trading-agent-security",
+          "module": "security",
+          "description": "Security patterns for autonomous trading agents with wallet or transaction authority."
+        },
+        {
+          "name": "agent-payment-x402",
+          "module": "agentic-patterns",
+          "description": "Add x402 payment execution to AI agents with per-task budgets, spending controls, and non-custodial wallets."
+        },
+        {
+          "name": "customer-billing-ops",
+          "module": "operator-workflows",
+          "description": "Operate customer billing workflows such as subscriptions, refunds, churn triage, billing-portal recovery, and plan analysis using connected billing tools like Stripe."
+        },
+        {
+          "name": "finance-billing-ops",
+          "module": "operator-workflows",
+          "description": "Evidence-first revenue, pricing, refunds, team-billing, and billing-model truth workflow for ECC."
+        },
+        {
+          "name": "token-card",
+          "module": "operator-workflows",
+          "description": "Render a token-usage stat card from local Claude Code, Codex, Gemini CLI, and OpenCode session logs and commit it into the repository as a file."
+        }
+      ]
+    },
+    {
+      "title": "Медицинские информационные системы",
+      "reason": "Разработка EMR/CDSS и соответствие HIPAA — узкая отраслевая область.",
+      "skills": [
+        {
+          "name": "healthcare-phi-compliance",
+          "module": "security",
+          "description": "Protected Health Information (PHI) and PII compliance patterns for healthcare applications: data classification, row-level access control, tamper-proof audit trails, schema tagging, and common leak..."
+        },
+        {
+          "name": "hipaa-compliance",
+          "module": "security",
+          "description": "HIPAA-specific entrypoint for healthcare privacy and security work."
+        },
+        {
+          "name": "healthcare-cdss-patterns",
+          "module": "security",
+          "description": "Clinical Decision Support System (CDSS) development patterns."
+        },
+        {
+          "name": "healthcare-emr-patterns",
+          "module": "security",
+          "description": "EMR/EHR development patterns for healthcare applications."
+        },
+        {
+          "name": "healthcare-eval-harness",
+          "module": "security",
+          "description": "Patient safety evaluation harness for healthcare application deployments."
+        }
+      ]
+    },
+    {
+      "title": "Сервисы конкретных вендоров",
+      "reason": "Требуют аккаунта или CLI конкретного сервиса.",
+      "skills": [
+        {
+          "name": "ito-compute",
+          "module": "ito-compute",
+          "description": "Query live GPU inventory, submit an authenticated Itô fixed-rate RFQ, inspect RFQ or procurement status, revoke device credentials, and run explicitly gated node qualification through the separatel..."
+        },
+        {
+          "name": "ito-inference",
+          "module": "ito-compute",
+          "description": "Inspect the availability of model serving on a completed Itô compute booking and, when the canonical backend becomes available, hand off an explicitly confirmed serving manifest."
+        },
+        {
+          "name": "ito-training",
+          "module": "ito-compute",
+          "description": "Inspect the availability of ML training on a completed Itô compute booking and, when the canonical backend becomes available, hand off an explicitly confirmed training manifest."
+        },
+        {
+          "name": "nasiko-control-plane",
+          "module": "nasiko-control-plane",
+          "description": "Manage the experimental Nasiko CLI lifecycle through ECC — read-only status checks, consent-gated install of the pinned qualified version with dry-run preview, and ownership-checked uninstall, unde..."
+        },
+        {
+          "name": "nutrient-document-processing",
+          "module": "document-processing",
+          "description": "Process, convert, OCR, extract, redact, sign, and fill documents using the Nutrient DWS API."
+        },
+        {
+          "name": "mailtrap-email-integration",
+          "module": "operator-workflows",
+          "description": "Guides agents through integrating transactional email sending via Mailtrap's Email API, including sandbox testing, domain verification, and API authentication."
+        },
+        {
+          "name": "ecc-tools-cost-audit",
+          "module": "operator-workflows",
+          "description": "Evidence-first ECC Tools burn and billing audit workflow."
+        },
+        {
+          "name": "flox-environments",
+          "module": "devops-infra",
+          "description": "Create reproducible, cross-platform (macOS/Linux) development environments with Flox, a declarative Nix-based environment manager."
+        },
+        {
+          "name": "uncloud",
+          "module": "devops-infra",
+          "description": "Use when managing an Uncloud cluster — deploying services, configuring Caddy ingress, adding static proxy routes for non-cluster devices, publishing ports, scaling, inspecting logs, or managing mac..."
+        },
+        {
+          "name": "unified-memory",
+          "module": "skill-unified-memory",
+          "description": "Share durable, inspectable context and handoffs between Claude, Codex, Hermes, Cursor, OpenCode, and other agents through the local ECC Memory Vault."
+        }
+      ]
+    },
+    {
+      "title": "Другие агентные среды",
+      "reason": "Рассчитаны на Claude DevFleet, NanoClaw, Hermes и OpenClaw, а не на Cursor.",
+      "skills": [
+        {
+          "name": "claude-devfleet",
+          "module": "agentic-patterns",
+          "description": "Orchestrate multi-agent coding tasks via Claude DevFleet — plan projects, dispatch parallel agents in isolated worktrees, monitor progress, and read structured reports."
+        },
+        {
+          "name": "nanoclaw-repl",
+          "module": "agentic-patterns",
+          "description": "Operate and extend NanoClaw, ECC's zero-dependency session-aware REPL, with persistent markdown-backed sessions and slash commands for model switching, skill loading, session branching, cross-sessi..."
+        },
+        {
+          "name": "hermes-imports",
+          "module": "agentic-patterns",
+          "description": "Convert local Hermes operator workflows into sanitized ECC skills and release-pack artifacts."
+        },
+        {
+          "name": "openclaw-persona-forge",
+          "module": "agentic-patterns",
+          "description": "为 OpenClaw AI Agent 锻造完整的龙虾灵魂方案。根据用户偏好或随机抽卡， 输出身份定位、灵魂描述(SOUL.md)、角色化底线规则、名字和头像生图提示词。 如当前环境提供已审核的生图 skill，可自动生成统一风格头像图片。 当用户需要创建、设计或定制 OpenClaw 龙虾灵魂时使用。 不适用于：微调已有 SOUL.md、非 OpenClaw 平台的角色设计、纯工具型无性格..."
+        }
+      ]
+    },
+    {
+      "title": "Сети и домашняя лаборатория",
+      "reason": "Сетевое железо Cisco, BGP, homelab.",
+      "skills": [
+        {
+          "name": "cisco-ios-patterns",
+          "module": "devops-infra",
+          "description": "Cisco IOS and IOS-XE review patterns for show commands, config hierarchy, wildcard masks, ACL placement, interface hygiene, and safe change-window verification."
+        },
+        {
+          "name": "netmiko-ssh-automation",
+          "module": "devops-infra",
+          "description": "Safe Python Netmiko patterns for read-only collection, bounded batch SSH, TextFSM parsing, guarded config changes, timeouts, and network automation error handling."
+        },
+        {
+          "name": "network-bgp-diagnostics",
+          "module": "devops-infra",
+          "description": "Diagnostics-only BGP troubleshooting patterns for neighbor state, route exchange, prefix policy, AS path inspection, and safe evidence collection."
+        },
+        {
+          "name": "network-config-validation",
+          "module": "devops-infra",
+          "description": "Pre-deployment checks for router and switch configuration, including dangerous commands, duplicate addresses, subnet overlaps, stale references, management-plane risk, and IOS-style security hygiene."
+        },
+        {
+          "name": "network-interface-health",
+          "module": "devops-infra",
+          "description": "Diagnose interface errors, drops, CRCs, duplex mismatches, flapping, speed negotiation issues, and counter trends on routers, switches, and Linux hosts."
+        },
+        {
+          "name": "homelab-network-readiness",
+          "module": "devops-infra",
+          "description": "Readiness checklist for homelab VLAN segmentation, local DNS filtering (Pi-hole, AdGuard Home), and WireGuard-style remote access."
+        },
+        {
+          "name": "homelab-network-setup",
+          "module": "devops-infra",
+          "description": "Practical home and homelab network planning for gateways, switches, access points, IP ranges, DHCP reservations, DNS, cabling, and common beginner mistakes."
+        },
+        {
+          "name": "homelab-pihole-dns",
+          "module": "devops-infra",
+          "description": "Pi-hole installation, blocklist management, DNS-over-HTTPS setup, DHCP integration, local DNS records, and troubleshooting broken DNS resolution on a home network."
+        },
+        {
+          "name": "homelab-vlan-segmentation",
+          "module": "devops-infra",
+          "description": "Segmenting home networks into VLANs for IoT, guest, trusted, and server traffic using UniFi, pfSense/OPNsense, and MikroTik — including switch trunk config, firewall rules, and wireless SSID mapping."
+        },
+        {
+          "name": "homelab-wireguard-vpn",
+          "module": "devops-infra",
+          "description": "WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a home network from mobile and laptop clients."
+        }
+      ]
+    },
+    {
+      "title": "Маркетинг, продажи и инвесторы",
+      "reason": "Узкие бизнес-процессы. Общие навыки письма, SEO и исследования рынка оставлены.",
+      "skills": [
+        {
+          "name": "investor-materials",
+          "module": "business-content",
+          "description": "Create and update pitch decks, one-pagers, investor memos, accelerator applications, financial models, and fundraising materials."
+        },
+        {
+          "name": "investor-outreach",
+          "module": "business-content",
+          "description": "Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising."
+        },
+        {
+          "name": "lead-intelligence",
+          "module": "business-content",
+          "description": "AI-native lead intelligence and outreach pipeline."
+        },
+        {
+          "name": "social-graph-ranker",
+          "module": "business-content",
+          "description": "Weighted social-graph ranking for warm intro discovery, bridge scoring, and network gap analysis across X and LinkedIn."
+        },
+        {
+          "name": "brand-discovery",
+          "module": "business-content",
+          "description": "Run a structured, resumable multi-session brand identity interview across 8 modules (purpose, positioning, audience, personality, voice, narrative, founder tension) using laddering, 5 Whys, and pro..."
+        },
+        {
+          "name": "competitive-platform-analysis",
+          "module": "business-content",
+          "description": "Use when scoping a competitive landscape — identifying, categorising, and score-filtering a competitor set before any benchmarking begins."
+        },
+        {
+          "name": "competitive-report-structure",
+          "module": "business-content",
+          "description": "Assemble scored competitor profile cards (from benchmark-methodology) into a decision-grade competitive report with landscape map, competitor tiers, benchmarking matrix, white-space analysis, strat..."
+        },
+        {
+          "name": "benchmark-methodology",
+          "module": "optimization-workflows",
+          "description": "Score a scoped competitor set into comparable profile cards: nine weighted dimensions (positioning, voice, visual craft, offer packaging, evidence, enterprise-readiness, thought leadership, pricing..."
+        },
+        {
+          "name": "marketing-campaign",
+          "module": "business-content",
+          "description": "End-to-end marketing campaign planning and execution."
+        }
+      ]
+    },
+    {
+      "title": "Соцсети и публикации",
+      "reason": "Публикация в X, LinkedIn и других соцсетях.",
+      "skills": [
+        {
+          "name": "crosspost",
+          "module": "social-distribution",
+          "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky."
+        },
+        {
+          "name": "x-api",
+          "module": "social-distribution",
+          "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics."
+        },
+        {
+          "name": "social-publisher",
+          "module": "social-distribution",
+          "description": "Agent-driven scheduling and publishing of social media posts across 13 platforms via SocialClaw."
+        }
+      ]
+    },
+    {
+      "title": "Видео, 3D и медиагенерация",
+      "reason": "Монтаж видео, Remotion, Blender, генерация медиа.",
+      "skills": [
+        {
+          "name": "blender-motion-state-inspection",
+          "module": "media-generation",
+          "description": "Use this skill when inspecting Blender characters, rigs, poses, animation retargeting, ground contact, facing direction, or model-vs-motion alignment where screenshots alone are not enough."
+        },
+        {
+          "name": "fal-ai-media",
+          "module": "media-generation",
+          "description": "Unified media generation via fal.ai MCP — image, video, and audio."
+        },
+        {
+          "name": "manim-video",
+          "module": "media-generation",
+          "description": "Build reusable Manim explainers for technical concepts, graphs, system diagrams, and product walkthroughs, then hand off to the wider ECC video stack if needed."
+        },
+        {
+          "name": "remotion-video-creation",
+          "module": "media-generation",
+          "description": "Best practices for Remotion - Video creation in React."
+        },
+        {
+          "name": "ui-demo",
+          "module": "media-generation",
+          "description": "Record polished UI demo videos using Playwright."
+        },
+        {
+          "name": "video-editing",
+          "module": "media-generation",
+          "description": "AI-assisted video editing workflows for cutting, structuring, and augmenting real footage."
+        },
+        {
+          "name": "videodb",
+          "module": "media-generation",
+          "description": "Ingest, index, search, edit, and monitor video and audio with the VideoDB Python SDK — upload from files, URLs, or RTSP feeds, build spoken and scene indexes with timestamped search and playable cl..."
+        },
+        {
+          "name": "taste",
+          "module": "media-generation",
+          "description": "Creative-direction layer for music videos and short-form edits in the angelcore / cloud-trance / hyperpop family — a named-genre aesthetic vocabulary, mood + color + light system, beat-synced editi..."
+        },
+        {
+          "name": "tasteforge-video",
+          "module": "media-generation",
+          "description": "Use for file-driven multimodal image, video, and 3D-asset discovery; taste interviews; distill or apply workflows; style-pack validation; editable EDL/FCPXML export; provenance audits; and offline..."
+        },
+        {
+          "name": "taste-distillation",
+          "module": "media-generation",
+          "description": "Measure a set of reference videos into a reusable style pack - colour grade as a 3D LUT, cut rhythm as a shot-length distribution, hero stills, screen-blend overlay plates, and a text spec for a ge..."
+        },
+        {
+          "name": "taste-application",
+          "module": "media-generation",
+          "description": "Generate new video against a distilled style pack and cut it into a finished piece - plan takes from the reference's cut rhythm, generate on fal, grade with the pack's measured LUT, cut at the meas..."
+        }
+      ]
+    },
+    {
+      "title": "Договоры и операторский документооборот",
+      "reason": "Генерация договоров, e-sign, согласования с контрагентами.",
+      "skills": [
+        {
+          "name": "operator-approval-loop",
+          "module": "operator-desk-patterns",
+          "description": "Operator approval contract with internal filing notices for agent-drafted outbound messages, hashed drafts, epoch-keyed decisions, durable delivery claims and receipts, and a pre-draft baseline gate."
+        },
+        {
+          "name": "counterparty-channel-discipline",
+          "module": "operator-desk-patterns",
+          "description": "Per-channel strict prompts, mention gating, silent observation, and a communication autonomy policy for agents that sit in shared channels with external counterparties."
+        },
+        {
+          "name": "master-agreement-generator",
+          "module": "operator-desk-patterns",
+          "description": "Generate review drafts of counterparty master agreements from one template plus a JSON spec, with role-selected clauses and a Schedule A workflow limited to the executed agreement's notice authority."
+        },
+        {
+          "name": "esign-field-placement",
+          "module": "operator-desk-patterns",
+          "description": "Deterministic method for placing signature, date, and text fields in a web e-signature composer through a browser automation session, using a fixed signature page, numeric Location panel coordinate..."
+        },
+        {
+          "name": "visa-doc-translate",
+          "module": "document-processing",
+          "description": "Translate visa document images (bank deposit, employment, income, and retirement certificates; HEIC, PNG, or JPG) into English via OCR and produce a bilingual PDF pairing the original image with a..."
+        }
+      ]
+    },
+    {
+      "title": "Узкие исследования и редкие технологии",
+      "reason": "OSINT, патентная база, биоинформатика, баги за вознаграждение, редкие фреймворки и языки.",
+      "skills": [
+        {
+          "name": "osint-investigation",
+          "module": "research-apis",
+          "description": "Sparse-clue OSINT investigation methodology for extracting overlooked leads, connecting fragmented evidence, and testing explanations across sources."
+        },
+        {
+          "name": "scientific-db-uspto-database",
+          "module": "research-apis",
+          "description": "USPTO patent and trademark data workflow for official record lookup, PatentSearch queries, TSDR checks, assignment data, and reproducible IP research logs."
+        },
+        {
+          "name": "scientific-pkg-gget",
+          "module": "research-apis",
+          "description": "gget CLI and Python workflow for quick genomic database queries, sequence lookup, BLAST-style searches, enrichment checks, and reproducible bioinformatics evidence logs."
+        },
+        {
+          "name": "security-bounty-hunter",
+          "module": "security",
+          "description": "Hunt for exploitable, bounty-worthy security issues in repositories."
+        },
+        {
+          "name": "bengali-nlp",
+          "module": "framework-language",
+          "description": "Bengali (Bangla) text processing patterns including Unicode normalization, script detection, tokenization, conjunct handling, and Bangla-specific NLP best practices for AI applications."
+        },
+        {
+          "name": "tinystruct-patterns",
+          "module": "framework-language",
+          "description": "Expert guidance for developing with the tinystruct Java framework."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "agent-kit",
+  "version": "1.0.0",
+  "description": "Install ECC skills (from upstream) and TencentDB-style git memory overlays into any project for Cursor, Claude, Codex, and Bionic.",
+  "type": "module",
+  "bin": {
+    "agent-kit": "./bin/agent-kit.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs overlay/scripts/tdai-memory/*.test.mjs overlay/scripts/ecc-postinstall.test.mjs overlay/scripts/tdai-memory-mcp.test.mjs",
+    "agent-kit": "node bin/agent-kit.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfyz1297/agent-kit.git"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "templates",
+    "overlay",
+    "third_party",
+    "README.md",
+    "LICENSE"
+  ]
+}

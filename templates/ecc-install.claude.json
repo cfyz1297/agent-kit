@@ -1,0 +1,16 @@
+﻿{
+  "version": 1,
+  "target": "claude",
+  "profile": "full",
+  "include": [],
+  "exclude": [
+    "capability:supply-chain",
+    "capability:prediction-markets",
+    "capability:ito-compute",
+    "capability:nasiko-control-plane",
+    "capability:operator-desk-patterns",
+    "capability:social",
+    "capability:media",
+    "capability:documents"
+  ]
+}

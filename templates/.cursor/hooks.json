@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "node .cursor/hooks/tdai-memory-context.mjs",
+        "timeout": 15
+      }
+    ]
+  }
+}

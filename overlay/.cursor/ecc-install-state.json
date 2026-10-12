@@ -1,0 +1,4 @@
+﻿{
+  "target": { "id": "cursor-project", "root": ".cursor", "installStatePath": ".cursor/ecc-install-state.json" },
+  "operations": []
+}
